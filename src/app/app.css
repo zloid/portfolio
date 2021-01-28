@@ -1,0 +1,39 @@
+.container {
+    background: silver;
+    padding: 10px 25px;
+    max-width: 400px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.calcCover {
+    background: silver;
+}
+
+.appScreen {
+    background: #a6bb00;
+    color: #fff;
+    overflow: hidden;
+    text-align: right;
+    padding: 5px 40px 5px 5px;
+}
+
+.app-btn {
+    border-color: silver;
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+}
+
+#calc-tooltip {
+    background: #333;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    font-size: 15px;
+    border-radius: 4px;
+    display: none;
+}
+#calc-tooltip[data-show] {
+    display: block;
+}
