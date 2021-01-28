@@ -2,7 +2,7 @@
 
 /**
  * Function which define EventListener for catching Keyboard and NumPad buttons:  + - delete backspace; and ignoring all f-buttons on keyboard
- * 
+ *
  * @function keyboardEventListener
  * @returns {string} an empty string
  * @example

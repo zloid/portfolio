@@ -13,8 +13,9 @@ import { GithubCorner } from '../components/GithubCorner/GithubCorner'
  * @example
  * App('#cool-root').render()
  */
-const App = (placeToRender = '#root') => new Reef(placeToRender, {
-    template: () => /* html */ `<div>
+const App = (placeToRender = '#root') =>
+    new Reef(placeToRender, {
+        template: () => /* html */ `<div>
     
         ${AppUi()}
 
@@ -23,6 +24,6 @@ const App = (placeToRender = '#root') => new Reef(placeToRender, {
         )}
 
     </div>`,
-})
+    })
 
 export default App
