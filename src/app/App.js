@@ -5,6 +5,8 @@ import Reef from 'reefjs'
 // presentational components
 // import { AppUi } from '../components/AppUi/AppUi'
 import { GithubCorner } from '../components/GithubCorner/GithubCorner'
+import { Navbar } from '../components/Navbar/Navbar'
+import {Header} from '../components/Header/Header';
 
 /**
  * Returns instance of Reef.js (whole SPA)
@@ -15,11 +17,13 @@ import { GithubCorner } from '../components/GithubCorner/GithubCorner'
  */
 const App = (placeToRender = '#root') =>
     new Reef(placeToRender, {
-        template: () => /* html */ `<div>            
+        template: () => /* html */ `<div>   
 
-        ${GithubCorner(
-            'https://github.com/zloid/modern-js-portfolio'
-        )}
+        ${Header()}      
+
+        ${Navbar()}         
+
+        ${GithubCorner('https://github.com/zloid/modern-js-portfolio')}
 
     </div>`,
     })
