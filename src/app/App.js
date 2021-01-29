@@ -3,7 +3,7 @@
 // analog of React.js
 import Reef from 'reefjs'
 // presentational components
-import { AppUi } from '../components/AppUi/AppUi'
+// import { AppUi } from '../components/AppUi/AppUi'
 import { GithubCorner } from '../components/GithubCorner/GithubCorner'
 
 /**
@@ -15,12 +15,10 @@ import { GithubCorner } from '../components/GithubCorner/GithubCorner'
  */
 const App = (placeToRender = '#root') =>
     new Reef(placeToRender, {
-        template: () => /* html */ `<div>
-    
-        ${AppUi()}
+        template: () => /* html */ `<div>            
 
         ${GithubCorner(
-            'https://github.com/zloid/modern-vanilla-js-starter-kit'
+            'https://github.com/zloid/modern-js-portfolio'
         )}
 
     </div>`,

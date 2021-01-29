@@ -1,6 +1,6 @@
 {
     "name": "modern-js-portfolio",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "modern-js-portfolio",
     "main": "index.js",
     "scripts": {
@@ -23,6 +23,7 @@
     "author": "idolz",
     "license": "MIT",
     "dependencies": {
+        "redux": "^4.0.5",
         "reefjs": "^7.6.6"
     },
     "devDependencies": {

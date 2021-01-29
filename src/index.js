@@ -1,4 +1,4 @@
-import mapAllDispatch from './utils/mapAllDispatch'
+// import mapAllDispatch from './utils/mapAllDispatch'
 // whole Application
 import App from './app/App'
 // for scripts which must be initialize after DOM complete load
@@ -11,7 +11,7 @@ import './app/body.css'
 import './app/app.css'
 
 // -mapAllDispatch- must be here, there all dispatch actions
-!globalThis.mapAllDispatch && (globalThis.mapAllDispatch = mapAllDispatch)
+// !globalThis.mapAllDispatch && (globalThis.mapAllDispatch = mapAllDispatch)
 
 // first render Reef's App to #root
 App('#root').render()
