@@ -6,12 +6,12 @@ const SWITCH_NAVBAR_ITEM_VANILLA_JS =
 
 const initialState = {
     isNavbarItemActive: [
-        { navbarItemAll: true },
-        { navbarItemVanillaJS: false },
-        { navbarItemReact: false },
-        { navbarItemHTML: false },
-        { navbarItemWordpress: false },
-        { navbarItemGitHubLink: false },
+        { navbarItemAll: true, value: 'ALL' },
+        { navbarItemVanillaJS: false, value: 'VanillaJS' },
+        { navbarItemReact: false, value: 'React' },
+        { navbarItemHTML: false, value: 'HTML, CSS, JS' },
+        { navbarItemWordpress: false, value: 'Wordpress' },
+        { navbarItemGitHubLink: false, value: 'GitHubLink' },
     ],
 }
 

@@ -12,7 +12,8 @@ import {switchNavbarItemVanillaJs, switchNavbarItemAll} from './features/navbar/
 store.dispatch(switchNavbarItemVanillaJs())
 store.dispatch(switchNavbarItemAll())
 store.dispatch(switchNavbarItemVanillaJs())
-store.dispatch(switchNavbarItemAll())
+
+
 
 // -mapAllDispatch- must be here, there all dispatch actions
 // !globalThis.mapAllDispatch && (globalThis.mapAllDispatch = mapAllDispatch)
