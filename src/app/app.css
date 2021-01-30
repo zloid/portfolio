@@ -37,3 +37,8 @@
 #calc-tooltip[data-show] {
     display: block;
 }
+
+.active {
+    border: 5px solid;
+    color: green;
+}

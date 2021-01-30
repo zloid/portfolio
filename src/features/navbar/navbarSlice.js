@@ -1,13 +1,13 @@
 import { selectNavbarItemAndSwitch } from './selectNavbarItemAndSwitch'
 
-const SWITCH_NAVBAR_ITEM_ALL = 'portfolioApp/navbarSlice/SWITCH_NAVBAR_ITEM_ALL'
+const SWITCH_NAVBAR_ITEM = 'portfolioApp/navbarSlice/SWITCH_NAVBAR_ITEM'
 const SWITCH_NAVBAR_ITEM_VANILLA_JS =
-    'portfolioApp/navbarSlice/SWITCH_NAVBAR_ITEM_ALL_VANILLA_JS'
+    'portfolioApp/navbarSlice/SWITCH_NAVBAR_ITEM_VANILLA_JS'
 
 const initialState = {
     isNavbarItemActive: [
-        { navbarItemAll: true, value: 'ALL' },
-        { navbarItemVanillaJS: false, value: 'VanillaJS' },
+        { navbarItemAll: false, value: 'ALL' },
+        { navbarItemVanillaJS: true, value: 'VanillaJS' },
         { navbarItemReact: false, value: 'React' },
         { navbarItemHTML: false, value: 'HTML, CSS, JS' },
         { navbarItemWordpress: false, value: 'Wordpress' },
@@ -17,12 +17,12 @@ const initialState = {
 
 export default function navbarReducer(state = initialState, action) {
     switch (action.type) {
-        case SWITCH_NAVBAR_ITEM_ALL:
+        case SWITCH_NAVBAR_ITEM:
             return {
                 ...state,
                 isNavbarItemActive: selectNavbarItemAndSwitch(
                     state,
-                    'navbarItemAll'
+                    action.payload
                 ),
             }
         case SWITCH_NAVBAR_ITEM_VANILLA_JS:
@@ -38,9 +38,10 @@ export default function navbarReducer(state = initialState, action) {
     }
 }
 
-export function switchNavbarItemAll() {
+export function switchNavbarItem(payload) {
     return {
-        type: SWITCH_NAVBAR_ITEM_ALL,
+        type: SWITCH_NAVBAR_ITEM,
+        payload
     }
 }
 

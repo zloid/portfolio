@@ -1,4 +1,5 @@
 import store from '../../app/store'
+
 /* 
 export const Navbar = () =>  `<nav role="navbarPortfolio">    
     <button role="navbarItemAll">ALL ${store.getState().navbarReducer.isNavbarItemActive}</button>
@@ -14,14 +15,21 @@ export const Navbar = () =>  `<nav role="navbarPortfolio">
     <button role="navbarItemGitHubLink">GitHubLink</button>
 </nav>` 
 */
-
 export const Navbar = () => /* html */ `<nav role="navbarPortfolio">        
    ${store
        .getState()
        .navbarReducer.isNavbarItemActive.map((navItem) => {
-           return `<button role=${Object.keys(navItem)[0]}>${
-               navItem.value
-           }</button>`
+           return `<button 
+                        class=${
+                            navItem[Object.keys(navItem)[0]] === true
+                                ? 'active'
+                                : 'disabled'
+                        }
+                        onclick="globalThis.mapAllDispatch.navbar.switchNavbarItem(this.getAttribute('role'))"
+                        role=${Object.keys(navItem)[0]}
+                    >
+                        ${navItem.value}
+                    </button>`
        })
        .join('')}
 </nav>`
