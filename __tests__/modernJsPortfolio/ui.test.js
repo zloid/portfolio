@@ -22,32 +22,22 @@ describe('App navbar', () => {
         expect(screen.getByRole(/navbarPortfolio/i)).not.toBeNull()
     })
     it('navbar item -ALL- is exist', () => {
-        // expect(screen.getByRole(/navbarItemAll/i)).not.toBeNull()
-
         const element = screen.getByRole(/navbarItemAll/i)
         expect(element.textContent.trim()).toBe('ALL')
     })
     it('navbar item -VanillaJS- is exist', () => {
-        // expect(screen.getByRole(/navbarItemVanillaJS/i)).not.toBeNull()
-
         const element = screen.getByRole(/navbarItemVanillaJS/i)
         expect(element.textContent.trim()).toBe('VanillaJS')
     })
     it('navbar item -React- is exist', () => {
-        // expect(screen.getByRole(/navbarItemReact/i)).not.toBeNull()
-
         const element = screen.getByRole(/navbarItemReact/i)
         expect(element.textContent.trim()).toBe('React')
     })
     it('navbar item -HTML- is exist', () => {
-        // expect(screen.getByRole(/navbarItemHTML/i)).not.toBeNull()
-
         const element = screen.getByRole(/navbarItemHTML/i)
         expect(element.textContent.trim()).toBe('HTML, CSS, JS')
     })
     it('navbar item -Wordpress- is exist', () => {
-        // expect(screen.getByRole(/navbarItemWordpress/i)).not.toBeNull()
-
         const element = screen.getByRole(/navbarItemWordpress/i)
         expect(element.textContent.trim()).toBe('Wordpress')
     })
@@ -64,6 +54,8 @@ describe('Header of App', () => {
     })
     it('h1 is exist', () => {
         const element = screen.getByRole(/h1Link/i)
-        expect(element.textContent.trim()).toBe('Sergey Voytehovich\'s portfolio')
+        expect(element.textContent.trim()).toBe(
+            "Sergey Voytehovich's portfolio"
+        )
     })
 })

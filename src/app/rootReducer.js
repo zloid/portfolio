@@ -1,9 +1,8 @@
-/* import { combineReducers } from '@reduxjs/toolkit'
-import incrementDecrementReducer from '../features/incrementDecrement/incrementDecrementSlice'
+import { combineReducers } from 'redux'
+import navbarReducer from '../features/navbar/navbarSlice'
 
 const rootReducer = combineReducers({
-    incrementDecrement: incrementDecrementReducer,
+    navbarReducer,
 })
 
 export default rootReducer
- */

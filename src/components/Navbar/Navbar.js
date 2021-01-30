@@ -1,15 +1,13 @@
-export const Navbar = () => /* html */ `<nav role="navbarPortfolio">
-    <div>NAVBAR</div>
+export const Navbar = () => /* html */ `<nav role="navbarPortfolio">    
+    <button role="navbarItemAll">ALL</button>
 
-    <span role="navbarItemAll">ALL</span>
+    <button role="navbarItemVanillaJS">VanillaJS</button>
 
-    <span role="navbarItemVanillaJS">VanillaJS</span>
+    <button role="navbarItemReact">React</button>
 
-    <span role="navbarItemReact">React</span>
+    <button role="navbarItemHTML">HTML, CSS, JS</button>
 
-    <span role="navbarItemHTML">HTML, CSS, JS</span>
+    <button role="navbarItemWordpress">Wordpress</button>
 
-    <span role="navbarItemWordpress">Wordpress</span>
-
-    <span role="navbarItemGitHubLink">GitHubLink</span>
+    <button role="navbarItemGitHubLink">GitHubLink</button>
 </nav>`

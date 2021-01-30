@@ -1,11 +1,6 @@
-// import { configureStore } from '@reduxjs/toolkit'
 import { createStore } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
 
-// import rootReducer from './rootReducer'
-/* 
-export default configureStore({
-    reducer: rootReducer,
-})
- */
+import rootReducer from './rootReducer'
 
-export default createStore((state = {a: 'bcd1355000'}) => state)
+export default createStore(rootReducer, composeWithDevTools())
