@@ -21,12 +21,11 @@ export const Navbar = () => /* html */ `<nav role="navbarPortfolio">
        .navbarReducer.isNavbarItemActive.map((navItem) => {
            return `<button 
                         class=${
-                            navItem[Object.keys(navItem)[0]] === true
-                                ? 'active'
-                                : 'disabled'
+                            navItem.isActive === true ? 'active' : 'disabled'
                         }
-                        onclick="globalThis.mapAllDispatch.navbar.switchNavbarItem(this.getAttribute('role'))"
-                        role=${Object.keys(navItem)[0]}
+                        onmouseover="globalThis.mapAllDispatch.navbar.switchNavbarItem(this.getAttribute('role'))"
+                        
+                        role=${navItem.id}
                     >
                         ${navItem.value}
                     </button>`

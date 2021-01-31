@@ -1,9 +1,11 @@
-export function selectNavbarItemAndSwitch(state = {}, navbarItemName = '') {
-    return state.isNavbarItemActive.map((navObj) => {
-        Object.keys(navObj)[0] === navbarItemName
-            ? (navObj[Object.keys(navObj)[0]] = true)
-            : (navObj[Object.keys(navObj)[0]] = false)
+export function selectNavbarItemAndSwitch(state = {}, payload = '') {
+    const navbarItems = state.isNavbarItemActive.map((navItem) => {
+        navItem.id === payload
+            ? (navItem.isActive = true)
+            : (navItem.isActive = false)
 
-        return navObj
+        return navItem
     })
+
+    return navbarItems
 }
