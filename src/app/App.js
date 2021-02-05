@@ -6,7 +6,7 @@ import Reef from 'reefjs'
 // import { AppUi } from '../components/AppUi/AppUi'
 import { GithubCorner } from '../components/GithubCorner/GithubCorner'
 import { Navbar } from '../components/Navbar/Navbar'
-import {Header} from '../components/Header/Header';
+import { Header } from '../components/Header/Header'
 
 /**
  * Returns instance of Reef.js (whole SPA)

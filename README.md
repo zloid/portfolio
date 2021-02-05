@@ -42,14 +42,23 @@ To provide developers with a set of good tools to get started quickly developing
 
 ## Modules
 
-| Module                        | Description |
-| ----------------------------- | ----------- |
-| [app-App]                     |
-| [components-Button]           |
-| [components-GithubCorner]     |
-| [utils-DOMDidMount]           |
-| [utils-keyboardEventListener] |
-| [utils-mapAllDispatch]        |
+| Module                    | Description |
+| ------------------------- | ----------- |
+| [app-App]                 |
+| [components-GithubCorner] |
+| [utils-mapAllDispatch]    |
+
+## Constants
+
+| Name           | Description |
+| -------------- | ----------- |
+| [initialState] |
+
+## Typedefs
+
+| Name            | Description |
+| --------------- | ----------- |
+| [ProjectsState] |
 
 ## app-App
 
@@ -67,36 +76,6 @@ Returns instance of Reef.js (whole SPA)
 
 ```js
 App('#cool-root').render()
-```
-
-## components-Button
-
-### components-Button~Button(props)
-
-Presentational component
-
-**Kind**: inner method of [`components-Button`]  
-**Returns**: `string` - template literal: bootstrap .col + custom html button
-
-| Param               | Type     | Description                                                                                           |
-| ------------------- | -------- | ----------------------------------------------------------------------------------------------------- |
-| props               | `Object` |                                                                                                       |
-| \[props.role\]      | `string` | HTML role attribute                                                                                   |
-| \[props.className\] | `string` | HTML class attribute                                                                                  |
-| \[props.eventType\] | `string` | HTML attribute named on-eventtype, specify an on-event handler for a particular event (such as click) |
-| \[props.event\]     | `string` | Event target                                                                                          |
-| \[props.nodeText\]  | `string` | HTMLElement.innerText                                                                                 |
-
-**Example**
-
-```js
-${Button({
-            role: 'appButtonIncrement',
-            className: 'app-btn btn btn-outline-success btn-lg btn-block',
-            eventType: 'ondblclick',
-            event: 'globalThis.mapAllDispatch.incrementDecrement.increment()',
-            nodeText: '+',
-})}
 ```
 
 ## components-GithubCorner
@@ -118,37 +97,6 @@ Presentational component
 ${GithubCorner('https://github.com/')}
 ```
 
-## utils-DOMDidMount
-
-### utils-DOMDidMount~DOMDidMount()
-
-Return eventListener -DOMContentLoaded- for window obj. The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
-
-**Kind**: inner method of [`utils-DOMDidMount`]  
-**Example**
-
-```js
-// keyboardEventListener()
-DOMDidMount()
-```
-
-## utils-keyboardEventListener
-
-### utils-keyboardEventListener~keyboardEventListener()
-
-Function which define EventListener for catching Keyboard and NumPad buttons: + - delete backspace; and ignoring all f-buttons on keyboard
-
-**Kind**: inner method of [`utils-keyboardEventListener`]  
-**Returns**: `string` - an empty string  
-**Example**
-
-```js
-// click on keyboard [+] ~> -increment-
-// click on keyboard [-] ~> -decrement-
-// click on keyboard [delete] ~> -clear all-
-keyboardEventListener()
-```
-
 ## utils-mapAllDispatch
 
 ### utils-mapAllDispatch~Connect
@@ -158,17 +106,21 @@ library for compose RTK actions
 
 **Kind**: inner class of [`utils-mapAllDispatch`]
 
+## initialState
+
+**Kind**: global constant
+
+## ProjectsState
+
+**Kind**: global typedef
+
 <!-- LINKS -->
 
 [app-app]: #app-app
-[components-button]: #components-button
 [components-githubcorner]: #components-githubcorner
-[utils-domdidmount]: #utils-domdidmount
-[utils-keyboardeventlistener]: #utils-keyboardeventlistener
 [utils-mapalldispatch]: #utils-mapalldispatch
+[initialstate]: #initialstate
+[projectsstate]: #projectsstate
 [`app-app`]: #app-app
-[`components-button`]: #components-button
 [`components-githubcorner`]: #components-githubcorner
-[`utils-domdidmount`]: #utils-domdidmount
-[`utils-keyboardeventlistener`]: #utils-keyboardeventlistener
 [`utils-mapalldispatch`]: #utils-mapalldispatch

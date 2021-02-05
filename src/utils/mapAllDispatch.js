@@ -10,7 +10,8 @@ import { switchNavbarItem } from '../features/navbar/navbarSlice'
 class Connect {
     constructor() {
         this.navbar = {
-            switchNavbarItem: (payload) => store.dispatch(switchNavbarItem(payload)),
+            switchNavbarItem: (payload) =>
+                store.dispatch(switchNavbarItem(payload)),
         }
     }
 }
