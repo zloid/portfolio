@@ -1,67 +1,19 @@
 import { normalize, schema } from "normalizr";
-/* 
+ 
 const initialState = {
-    portfolioProjects: [
-        {
-            navbarItemAll: [
-                {
-                    name: 'project one',
-                },
-            ],
-        },
-    ],
-} */
-
-/* 
-
-// Define a users schema
-const user = new schema.Entity('users');
-
-// Define your comments schema
-const comment = new schema.Entity('comments', {
-  commenter: user
-});
-
-// Define your article
-const article = new schema.Entity('articles', {
-  author: user,
-  comments: [comment]
-}); */
-
-const initialState = {
-    "id" : 12345,
-    "project": {
-        "id": "1_",
-        "nameOfProject": "projectOne",
-    }
+   "results" : [
+     {id: '1', res: 'one'},
+     {id: '2', res: 'two'},
+     {id: '3', res: 'three'},
+   ]
 }
 
-const project = new schema.Entity('project')
+const project = new schema.Entity('someEntity')
 
-const projects = new schema.Entity('projects_', {
-    newProject: [project]
-})
+const resultEntyty = new schema.Entity('resultEntyty')
+ 
+const normalizedState = normalize(initialState, resultEntyty)
 
-const normalizedState = normalize(initialState, projects)
-
-export default function projectsReducer(state = normalizedState, reducer) {
+export default function projectsReducer(state = normalizedState) {
     return state
 }
-
-/* 
-projectsReducer: {
-    entities: {
-      projects: {
-        '12345': {
-          id: 12345,
-          project: {
-            id: '1_',
-            nameOfProject: 'projectOne'
-          }
-        }
-      }
-    },
-    result: 12345
-  }
-}
-*/
