@@ -7,6 +7,7 @@ import Reef from 'reefjs'
 import { GithubCorner } from '../components/GithubCorner/GithubCorner'
 import { Navbar } from '../components/Navbar/Navbar'
 import { Header } from '../components/Header/Header'
+import { Projects } from '../components/Projects/Projects'
 
 /**
  * Returns instance of Reef.js (whole SPA)
@@ -21,7 +22,9 @@ const App = (placeToRender = '#root') =>
 
         ${Header()}      
 
-        ${Navbar()}         
+        ${Navbar()}    
+
+        ${Projects()}    
 
         ${GithubCorner('https://github.com/zloid/modern-js-portfolio')}
 

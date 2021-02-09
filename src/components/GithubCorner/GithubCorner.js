@@ -4,7 +4,7 @@
  * Presentational component
  * @function GithubCorner
  * @param {string} linkToRepo - link to github repository
- * @return {string} template literal: octoCat svg + link to repo
+ * @returns {string} template literal: octoCat svg + link to repo
  * @example
  * ${GithubCorner('https://github.com/')}
  */
