@@ -6,10 +6,10 @@ const initialState = {
             {
                 id: 0,
                 name: 'math-calc',
-                link: 'https://github.com/zloid/math-calc',
+                link: 'https://zloid.github.io/math-calc/',
             },
             {
-                id: 'tstttt_id',
+                id: 1,
                 name: 'audio-player',
                 link: 'https://zloid.github.io/audio-player/',
             },
@@ -36,8 +36,8 @@ const resultEntyty = {
  */
 
 const resultEntyty = {
-    projects: {
-        vanillaJS: [new schema.Entity('valillaJS')],
+    projects: {        
+        vanillaJS: [new schema.Entity('vanillaJS')],
         react: [new schema.Entity('react')],
     },
 }
