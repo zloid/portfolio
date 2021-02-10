@@ -1,6 +1,9 @@
 /** @module utils-mapAllDispatch */
 import store from '../app/store'
-import { switchNavbarItem } from '../features/navbar/navbarSlice'
+import {
+    switchNavbarItem,
+    switchNavbarCurrentFocus,
+} from '../features/navbar/navbarSlice'
 
 /** @class Connect
  * library for compose RTK actions
@@ -10,8 +13,10 @@ import { switchNavbarItem } from '../features/navbar/navbarSlice'
 class Connect {
     constructor() {
         this.navbar = {
-            switchNavbarItem: (payload) =>
-                store.dispatch(switchNavbarItem(payload)),
+            switchNavbarItem: (payload) => {
+                store.dispatch(switchNavbarItem(payload))
+                store.dispatch(switchNavbarCurrentFocus(payload))
+            },
         }
     }
 }

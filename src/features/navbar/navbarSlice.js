@@ -1,6 +1,8 @@
 import { selectNavbarItemAndSwitch } from './selectNavbarItemAndSwitch'
 
 const SWITCH_NAVBAR_ITEM = 'portfolioApp/navbarSlice/SWITCH_NAVBAR_ITEM'
+const SWITCH_NAVBAR_CURRENT_FOCUS =
+    'portfolioApp/navbarSlice/SWITCH_NAVBAR_CURRENT_FOCUS'
 
 const initialState = {
     isNavbarItemActive: [
@@ -11,6 +13,7 @@ const initialState = {
         { id: 'navbarItemWordpress', isActive: false, value: 'Wordpress' },
         { id: 'navbarItemGitHubLink', isActive: false, value: 'GitHubLink' },
     ],
+    currentNavItemFocus: 'navbarItemVanillaJS',
 }
 
 export default function navbarReducer(state = initialState, action) {
@@ -23,6 +26,11 @@ export default function navbarReducer(state = initialState, action) {
                     action.payload
                 ),
             }
+        case SWITCH_NAVBAR_CURRENT_FOCUS:
+            return {
+                ...state,
+                currentNavItemFocus: action.payload,
+            }
         default:
             return state
     }
@@ -31,6 +39,12 @@ export default function navbarReducer(state = initialState, action) {
 export function switchNavbarItem(payload) {
     return {
         type: SWITCH_NAVBAR_ITEM,
+        payload,
+    }
+}
+export function switchNavbarCurrentFocus(payload) {
+    return {
+        type: SWITCH_NAVBAR_CURRENT_FOCUS,
         payload,
     }
 }
