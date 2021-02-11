@@ -7,14 +7,22 @@ export const Projects = () => {
 
     whatIm = whatIm.map(
         (e) =>
-            `<button> <a target="_blank" href=${e.link}> ${e.name} </a> </button>`
+            `<button> <a target="_blank" href=${e.link}> ${e.name} </a> </button>
+            <br />
+            <img width="100" height="100" src="https://zloid.github.io/images/zoo-10.jpg" />
+            `
     )
     whatIm_2 = whatIm_2.map(
         (e) =>
-            `<button> <a target="_blank" href=${e.link}> ${e.name} </a> </button>`
+            `<button> <a target="_blank" href=${e.link}> ${e.name} </a> </button>
+            <br />
+            <img width="100" height="100" src="https://zloid.github.io/images/fast-search-min.jpg" />
+            `
     )
 
     switch (store.getState().navbarReducer.currentNavItemFocus) {
+        case 'navbarItemAll':
+            return /* html */ ` ${whatIm} ${whatIm_2}`
         case 'navbarItemVanillaJS':
             return /* html */ ` ${whatIm}`
         case 'navbarItemReact':

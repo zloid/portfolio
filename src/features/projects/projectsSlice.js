@@ -29,14 +29,9 @@ const initialState = {
         ],
     },
 }
-/* 
-const resultEntyty = {
-    projects: [new schema.Entity('projects', {})],
-}
- */
 
 const resultEntyty = {
-    projects: {        
+    projects: {
         vanillaJS: [new schema.Entity('vanillaJS')],
         react: [new schema.Entity('react')],
     },
