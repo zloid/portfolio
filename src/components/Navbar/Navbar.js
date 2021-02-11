@@ -13,8 +13,7 @@ export const Navbar = () => {
 
     const mainNavBar = dataForNavbar
         .map((navItem) => {
-            return /* html */ `
-      <button 
+            return /* html */ `<button 
            class=${navItem.isActive === true ? 'active' : 'disabled'}
 
            role=${navItem.id}

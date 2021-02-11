@@ -1,4 +1,4 @@
-export function selectNavbarItemAndSwitch(state = {}, payload = '') {
+export function selectNavbarItemAndSwitch(state, payload) {
     const navbarItems = state.isNavbarItemActive.map((navItem) => {
         navItem.id === payload
             ? (navItem.isActive = true)

@@ -1,6 +1,14 @@
+/** @module components-Projects */
+
 import store from '../../app/store'
 import { projectsSelector } from '../../features/projects/projectsSelector'
 
+
+/**
+ * Presentational component
+ * @function Projects
+ * @returns {string} show up portfolio projects, rely on active navbar item
+ */
 export const Projects = () => {
     let whatIm = projectsSelector(store.getState(), 'vanillaJS')
     let whatIm_2 = projectsSelector(store.getState(), 'react')
