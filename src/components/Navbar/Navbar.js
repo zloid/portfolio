@@ -8,6 +8,24 @@ import store from '../../app/store'
  * @function Navbar
  * @returns {string} complete main navbar
  */
-export const Navbar = () => /* html */ `<nav role="navbarPortfolio">        
-   ${navbarSelector(store.getState())}
-</nav>`
+export const Navbar = () => {
+    const dataForNavbar = navbarSelector(store.getState())
+
+    const mainNavBar = dataForNavbar
+        .map((navItem) => {
+            return /* html */ `
+      <button 
+           class=${navItem.isActive === true ? 'active' : 'disabled'}
+
+           role=${navItem.id}
+           
+           onmouseover="globalThis.mapAllDispatch.navbar.switchNavbarItem(this.getAttribute('role'))"
+           
+       >
+           ${navItem.value}
+      </button>`
+        })
+        .join('')
+
+    return /* html */ `<nav role="navbarPortfolio">${mainNavBar}</nav>`
+}
