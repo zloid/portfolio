@@ -1,7 +1,7 @@
 import { selectNavbarItemAndSwitch } from './selectNavbarItemAndSwitch'
 
-const SWITCH_NAVBAR_ITEM = 'portfolioApp/navbarSlice/SWITCH_NAVBAR_ITEM'
-const SWITCH_NAVBAR_CURRENT_FOCUS =
+export const SWITCH_NAVBAR_ITEM = 'portfolioApp/navbarSlice/SWITCH_NAVBAR_ITEM'
+export const SWITCH_NAVBAR_CURRENT_FOCUS =
     'portfolioApp/navbarSlice/SWITCH_NAVBAR_CURRENT_FOCUS'
 
 const initialState = {
@@ -16,6 +16,10 @@ const initialState = {
     currentNavItemFocus: 'navbarItemVanillaJS',
 }
 
+/**
+ * Reducer
+ * @function navbarReducer
+ * @example @see [unit_test]{@link https://github.com/zloid/modern-js-portfolio/blob/main/__tests__/modernJsPortfolio/unit/navbarReducer.test.js} */
 export default function navbarReducer(state = initialState, action) {
     switch (action.type) {
         case SWITCH_NAVBAR_ITEM:
