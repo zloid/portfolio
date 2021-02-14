@@ -1,3 +1,5 @@
+/**@module slice-navbarSlice */
+
 import { selectNavbarItemAndSwitch } from './selectNavbarItemAndSwitch'
 
 export const SWITCH_NAVBAR_ITEM = 'portfolioApp/navbarSlice/SWITCH_NAVBAR_ITEM'
@@ -7,13 +9,13 @@ export const SWITCH_NAVBAR_CURRENT_FOCUS =
 const initialState = {
     isNavbarItemActive: [
         { id: 'navbarItemAll', isActive: false, value: 'ALL' },
-        { id: 'navbarItemVanillaJS', isActive: true, value: 'VanillaJS' },
-        { id: 'navbarItemReact', isActive: false, value: 'React' },
+        { id: 'navbarItemVanillaJS', isActive: false, value: 'VanillaJS' },
+        { id: 'navbarItemReact', isActive: true, value: 'React' },
         { id: 'navbarItemHTML', isActive: false, value: 'HTML, CSS, JS' },
         { id: 'navbarItemWordpress', isActive: false, value: 'Wordpress' },
         { id: 'navbarItemGitHubLink', isActive: false, value: 'GitHubLink' },
     ],
-    currentNavItemFocus: 'navbarItemVanillaJS',
+    currentNavItemFocus: 'navbarItemReact',
 }
 
 /**

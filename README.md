@@ -18,7 +18,7 @@
 -   Automatic generation of html documentation from JSDoc + docdash as a nice looking template for JSDoc
 -   Automatic README.md generation from JSDoc
 -   Husky: for hooks
- 
+
 ## You can
 
 -   git clone [this_repo_url] && cd [repo_name] && npm i (install this repo on your machine)
@@ -30,183 +30,181 @@
 -   npm run serve (for run app local server and www)
 -   use VSC + Extensions: "Comment tagged templates", "lit-html", for best expierence with HTML-in-JS template literals
 
-
 <!-- You do not need to touch the code below. This is automatic README.md generation -->
 <!-- check out https://github.com/jsdoc2md for learn more -->
 
 ## API Reference
 
 ## Modules
-Module | Description
------- | -----------
-[app-App] | 
-[components-GithubCorner] | 
-[components-Navbar] | 
-[components-Projects] | 
-[selector-navbarSelector] | 
-[selector-selectNavbarItemAndSwitch] | 
-[selector-projectsSelector] | 
-[utils-mapAllDispatch] | 
+
+| Module                               | Description |
+| ------------------------------------ | ----------- |
+| [app-App]                            |
+| [components-GithubCorner]            |
+| [components-Navbar]                  |
+| [components-Projects]                |
+| [selector-navbarSelector]            |
+| [selector-selectNavbarItemAndSwitch] |
+| [selector-projectsSelector]          |
+| [utils-mapAllDispatch]               |
 
 ## Functions
 
-Name | Description
------- | -----------
-[navbarReducer()] | Reducer
-
+| Name              | Description |
+| ----------------- | ----------- |
+| [navbarReducer()] | Reducer     |
 
 ## app-App
-
 
 ### app-App~App(\[placeToRender\])
 
 Returns instance of Reef.js (whole SPA)
 
-**Kind**: inner method of [`app-App`]  
+**Kind**: inner method of [`app-App`]
 
-| Param | Type | Default |
-| --- | --- | --- |
-| \[placeToRender\] | `string` | `'#root'` | 
+| Param             | Type     | Default   |
+| ----------------- | -------- | --------- |
+| \[placeToRender\] | `string` | `'#root'` |
 
-**Example**  
+**Example**
+
 ```js
 App('#cool-root').render()
 ```
 
 ## components-GithubCorner
 
-
 ### components-GithubCorner~GithubCorner(linkToRepo)
 
 Presentational component
 
 **Kind**: inner method of [`components-GithubCorner`]  
-**Returns**: `string` - template literal: octoCat svg + link to repo  
+**Returns**: `string` - template literal: octoCat svg + link to repo
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param      | Type     | Description               |
+| ---------- | -------- | ------------------------- |
 | linkToRepo | `string` | link to github repository |
 
-**Example**  
+**Example**
+
 ```js
 ${GithubCorner('https://github.com/')}
 ```
 
 ## components-Navbar
 
-
 ### components-Navbar~Navbar()
 
 Presentational component
 
 **Kind**: inner method of [`components-Navbar`]  
-**Returns**: `string` - complete main navbar  
+**Returns**: `string` - complete main navbar
 
 ## components-Projects
-
 
 ### components-Projects~Projects()
 
 Presentational component
 
 **Kind**: inner method of [`components-Projects`]  
-**Returns**: `string` - show up portfolio projects, rely on active navbar item  
+**Returns**: `string` - show up portfolio projects, rely on active navbar item
 
 ## selector-navbarSelector
-
 
 ### selector-navbarSelector~navbarSelector(store)
 
 Selector for getting a data for creating nav buttons
 
 **Kind**: inner method of [`selector-navbarSelector`]  
-**Returns**: `Array.<object>` - - data for html buttons  
+**Returns**: `Array.<object>` - - data for html buttons
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type     | Description        |
+| ----- | -------- | ------------------ |
 | store | `object` | global Redux store |
 
-**Example**  
+**Example**
+
 ```js
-@see [unit test]
+@see [unit_test]
 ```
 
 ## selector-selectNavbarItemAndSwitch
-
 
 ### selector-selectNavbarItemAndSwitch~selectNavbarItemAndSwitch(state, payload)
 
 Selector for enable some item and disable other
 
-**Kind**: inner method of [`selector-selectNavbarItemAndSwitch`]  
+**Kind**: inner method of [`selector-selectNavbarItemAndSwitch`]
 
-| Param | Type | Description |
-| --- | --- | --- |
-| state | `object` | Redux state |
+| Param   | Type     | Description   |
+| ------- | -------- | ------------- |
+| state   | `object` | Redux state   |
 | payload | `string` | id for switch |
 
-**Example**  
+**Example**
+
 ```js
-@see [unit test]
+@see [unit_test]
 ```
 
 ## selector-projectsSelector
-
 
 ### selector-projectsSelector~projectsSelector(storeState, projectEntity)
 
 Selector
 
 **Kind**: inner method of [`selector-projectsSelector`]  
-**Returns**: `Array.<object>` - - combine of selected results  
+**Returns**: `Array.<object>` - - combine of selected results
 
-| Param | Type | Description |
-| --- | --- | --- |
-| storeState | `object` | part of the Redux store |
+| Param         | Type     | Description                      |
+| ------------- | -------- | -------------------------------- |
+| storeState    | `object` | part of the Redux store          |
 | projectEntity | `string` | the name of the requested entity |
 
-**Example**  
+**Example**
+
 ```js
-@see [unit test]
+@see [unit_test]
 ```
 
 ## utils-mapAllDispatch
-
 
 ### utils-mapAllDispatch~Connect
 
 Connect
 library for compose RTK actions
 
-**Kind**: inner class of [`utils-mapAllDispatch`]  
+**Kind**: inner class of [`utils-mapAllDispatch`]
 
 ## navbarReducer()
 
 Reducer
 
 **Kind**: global function  
-**Example**  
+**Example**
+
 ```js
 @see [unit_test]
 ```
+
 <!-- LINKS -->
 
-[app-App]:#app-app
-[components-GithubCorner]:#components-githubcorner
-[components-Navbar]:#components-navbar
-[components-Projects]:#components-projects
-[selector-navbarSelector]:#selector-navbarselector
-[selector-selectNavbarItemAndSwitch]:#selector-selectnavbaritemandswitch
-[selector-projectsSelector]:#selector-projectsselector
-[utils-mapAllDispatch]:#utils-mapalldispatch
-[`app-App`]:#app-app
-[`components-GithubCorner`]:#components-githubcorner
-[`components-Navbar`]:#components-navbar
-[`components-Projects`]:#components-projects
-[`selector-navbarSelector`]:#selector-navbarselector
-[unit test]:https://github.com/zloid/modern-js-portfolio/blob/main/__tests__/modernJsPortfolio/unit/projectsSelector.test.js
-[`selector-selectNavbarItemAndSwitch`]:#selector-selectnavbaritemandswitch
-[`selector-projectsSelector`]:#selector-projectsselector
-[`utils-mapAllDispatch`]:#utils-mapalldispatch
-[unit_test]:https://github.com/zloid/modern-js-portfolio/blob/main/__tests__/modernJsPortfolio/unit/navbarReducer.test.js
-[navbarReducer()]:#navbarreducer
+[app-app]: #app-app
+[components-githubcorner]: #components-githubcorner
+[components-navbar]: #components-navbar
+[components-projects]: #components-projects
+[selector-navbarselector]: #selector-navbarselector
+[selector-selectnavbaritemandswitch]: #selector-selectnavbaritemandswitch
+[selector-projectsselector]: #selector-projectsselector
+[utils-mapalldispatch]: #utils-mapalldispatch
+[`app-app`]: #app-app
+[`components-githubcorner`]: #components-githubcorner
+[`components-navbar`]: #components-navbar
+[`components-projects`]: #components-projects
+[`selector-navbarselector`]: #selector-navbarselector
+[unit_test]: https://github.com/zloid/modern-js-portfolio/blob/main/__tests__/modernJsPortfolio/unit/projectsSelector.test.js
+[`selector-selectnavbaritemandswitch`]: #selector-selectnavbaritemandswitch
+[`selector-projectsselector`]: #selector-projectsselector
+[`utils-mapalldispatch`]: #utils-mapalldispatch
+[unit_test]: https://github.com/zloid/modern-js-portfolio/blob/main/__tests__/modernJsPortfolio/unit/navbarReducer.test.js
+[navbarreducer()]: #navbarreducer

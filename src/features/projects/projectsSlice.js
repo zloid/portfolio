@@ -20,11 +20,13 @@ const initialState = {
                 name: 'React-App-Finding-Balance-Errors',
                 link:
                     'https://zloid.github.io/React-App-Finding-Balance-Errors/',
+                thumbnail: 'assets/react-app-finding-balance-errors.jpg'
             },
             {
                 id: 1,
                 name: 'figma-template-to-react',
                 link: 'http://figma-template-to-react.zloid.ru/',
+                thumbnail: 'assets/react-from-figma-tmplt.jpg'
             },
         ],
     },
