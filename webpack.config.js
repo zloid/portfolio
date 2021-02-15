@@ -39,14 +39,10 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             outputPath: 'assets',
-                            name: '[name].[ext]'
+                            name: '[name].[ext]',
                         },
                     },
                 ],
-            },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
             },
         ],
     },
