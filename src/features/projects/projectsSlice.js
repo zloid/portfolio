@@ -3,6 +3,8 @@ import '../../../public/assets/react-app-finding-balance-errors.jpg'
 import '../../../public/assets/react-from-figma-tmplt.jpg'
 import '../../../public/assets/math-calc.png'
 import '../../../public/assets/vanilla-js-audio-player.jpg'
+import '../../../public/assets/currency-processing-app.png'
+
 
 const initialState = {
     projects: {
@@ -11,13 +13,13 @@ const initialState = {
                 id: 0,
                 name: 'math-calc',
                 link: 'https://zloid.github.io/math-calc/',
-                thumbnail: 'assets/math-calc.png'
+                thumbnail: 'assets/math-calc.png',
             },
             {
                 id: 1,
                 name: 'audio-player',
                 link: 'https://zloid.github.io/audio-player/',
-                thumbnail: 'assets/vanilla-js-audio-player.jpg'
+                thumbnail: 'assets/vanilla-js-audio-player.jpg',
             },
         ],
         react: [
@@ -26,13 +28,19 @@ const initialState = {
                 name: 'React-App-Finding-Balance-Errors',
                 link:
                     'https://zloid.github.io/React-App-Finding-Balance-Errors/',
-                thumbnail: 'assets/react-app-finding-balance-errors.jpg'
+                thumbnail: 'assets/react-app-finding-balance-errors.jpg',
             },
             {
                 id: 1,
                 name: 'figma-template-to-react',
                 link: 'http://figma-template-to-react.zloid.ru/',
-                thumbnail: 'assets/react-from-figma-tmplt.jpg'
+                thumbnail: 'assets/react-from-figma-tmplt.jpg',
+            },
+            {
+                id: 2,
+                name: 'currency-processing-app',
+                link: 'https://zloid.github.io/currency-processing-app/',
+                thumbnail: 'assets/currency-processing-app.png',
             },
         ],
     },

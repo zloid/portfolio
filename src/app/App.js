@@ -3,11 +3,10 @@
 // analog of React.js
 import Reef from 'reefjs'
 // presentational components
-// import { AppUi } from '../components/AppUi/AppUi'
-import { GithubCorner } from '../components/GithubCorner/GithubCorner'
-import { Navbar } from '../components/Navbar/Navbar'
 import { Header } from '../components/Header/Header'
+import { Navbar } from '../components/Navbar/Navbar'
 import { Projects } from '../components/Projects/Projects'
+import { GithubCorner } from '../components/GithubCorner/GithubCorner'
 
 /**
  * Returns instance of Reef.js (whole SPA)

@@ -4,7 +4,7 @@ import App from './app/App'
 // Redux store
 import store from './app/store'
 // styles for App
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './app/body.css'
 import './app/app.css'
 

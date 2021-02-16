@@ -14,7 +14,8 @@ export const Projects = () => {
 
     vanillaJsItems = vanillaJsItems.map(
         (e) => /* html */ `
-            <a target="_blank" href=${e.link}> ${e.name} 
+            <a target="_blank" href=${e.link}> 
+                ${e.name} 
                 <button> 
                     <img width="150" height="150" src=${e.thumbnail} />
                 </button>
@@ -24,7 +25,8 @@ export const Projects = () => {
     )
     reactItems = reactItems.map(
         (e) => /* html */ `
-            <a target="_blank" href=${e.link}> ${e.name} 
+            <a target="_blank" href=${e.link}> 
+                ${e.name} 
                 <button> 
                     <img width="150" height="150" src=${e.thumbnail} />
                 </button>

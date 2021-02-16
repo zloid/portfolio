@@ -22,9 +22,11 @@ export const Navbar = () => {
            
        >
            ${navItem.value}
+
+           <span>(projects)</span>
       </button>`
         })
         .join('')
 
-    return /* html */ `<nav role="navbarPortfolio">${mainNavBar}</nav>`
+    return /* html */ `<nav id="filter" role="navbarPortfolio">${mainNavBar}</nav>`
 }
