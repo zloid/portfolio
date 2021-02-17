@@ -13,7 +13,6 @@ const initialState = {
         { id: 'navbarItemReact', isActive: false, value: 'React' },
         { id: 'navbarItemHTML', isActive: false, value: 'HTML, CSS, JS' },
         { id: 'navbarItemWordpress', isActive: false, value: 'Wordpress' },
-        { id: 'navbarItemGitHubLink', isActive: false, value: 'GitHubLink' },
     ],
     currentNavItemFocus: 'navbarItemAll',
 }

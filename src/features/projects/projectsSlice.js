@@ -1,9 +1,10 @@
 import { normalize, schema } from 'normalizr'
 import '../../../public/assets/react-app-finding-balance-errors.jpg'
 import '../../../public/assets/react-from-figma-tmplt.jpg'
-import '../../../public/assets/math-calc.png'
+import '../../../public/assets/math-calc.jpg'
 import '../../../public/assets/vanilla-js-audio-player.jpg'
-import '../../../public/assets/currency-processing-app.png'
+import '../../../public/assets/currency-processing-app.jpg'
+import '../../../public/assets/current-weather-data-on-map.jpg'
 
 
 const initialState = {
@@ -13,13 +14,15 @@ const initialState = {
                 id: 0,
                 name: 'math-calc',
                 link: 'https://zloid.github.io/math-calc/',
-                thumbnail: 'assets/math-calc.png',
+                thumbnail: 'assets/math-calc.jpg',
+                description: 'small math calc with tests',
             },
             {
                 id: 1,
                 name: 'audio-player',
                 link: 'https://zloid.github.io/audio-player/',
                 thumbnail: 'assets/vanilla-js-audio-player.jpg',
+                description: 'tiny audio player script',
             },
         ],
         react: [
@@ -29,19 +32,23 @@ const initialState = {
                 link:
                     'https://zloid.github.io/React-App-Finding-Balance-Errors/',
                 thumbnail: 'assets/react-app-finding-balance-errors.jpg',
+                description: 'react...',
             },
             {
                 id: 1,
                 name: 'figma-template-to-react',
                 link: 'http://figma-template-to-react.zloid.ru/',
                 thumbnail: 'assets/react-from-figma-tmplt.jpg',
+                description: 'react...',
             },
             {
                 id: 2,
                 name: 'currency-processing-app',
                 link: 'https://zloid.github.io/currency-processing-app/',
-                thumbnail: 'assets/currency-processing-app.png',
+                thumbnail: 'assets/currency-processing-app.jpg',
+                description: 'react...',
             },
+            {id: 3, name: 'current-weather-data-on-map', link: 'https://zloid.github.io/current-weather-data-on-map/', thumbnail: 'assets/current-weather-data-on-map.jpg', description: 'React + Redux-Toolkit SPA: shows the current weather in Poland in different colors'},
         ],
     },
 }

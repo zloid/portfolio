@@ -155,7 +155,8 @@ h1 a {
 .all-span,
 .skills-span,
 .pureJsSpan,
-.reactSpan {
+.reactSpan,
+.itemsCount {
     display: inline-block;
     min-width: 22px;
     line-height: 20px;

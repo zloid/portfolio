@@ -3,9 +3,9 @@
 /**
  * Selector
  * @function projectsSelector
- * @param {object} storeState - part of the Redux store
+ * @param {object} storeState - Redux store
  * @param {string} projectEntity - the name of the requested entity
- * @returns {object[]} - combine of selected results
+ * @returns {object[]} combine of selected results
  * @example @see [unit_test]{@link https://github.com/zloid/modern-js-portfolio/blob/main/__tests__/modernJsPortfolio/unit/projectsSelector.test.js}
  */
 export const projectsSelector = (storeState, projectEntity) => {
