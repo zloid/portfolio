@@ -23,7 +23,11 @@ const App = (placeToRender = '#root') =>
 
         ${Navbar()}    
 
-        ${Projects()}    
+        <div class="container">
+
+            ${Projects()}    
+
+        </div>
 
         ${GithubCorner('https://github.com/zloid/modern-js-portfolio')}
 

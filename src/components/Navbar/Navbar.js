@@ -14,7 +14,7 @@ export const Navbar = () => {
     const mainNavBar = dataForNavbar
         .map((navItem) => {
             return /* html */ `<button 
-           class=${navItem.isActive === true ? 'active' : 'disabled'}
+           class="${navItem.isActive === true ? 'active' : 'disabled'}"
 
            role=${navItem.id}
            
@@ -23,7 +23,6 @@ export const Navbar = () => {
        >
            ${navItem.value}
 
-           <span>(projects)</span>
       </button>`
         })
         .join('')
