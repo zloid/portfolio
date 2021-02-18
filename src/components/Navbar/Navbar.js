@@ -1,9 +1,9 @@
 /** @module components-Navbar */
 
-import { navbarSelector } from '../../features/navbar/navbarSelector'
 import store from '../../app/store'
-import '../../../public/assets/beard-avatar.jpg'
+import { navbarSelector } from '../../features/navbar/navbarSelector'
 import { countOfProject } from './countOfProject'
+import '../../../public/assets/beard-avatar.jpg'
 
 /**
  * Presentational component
@@ -20,7 +20,7 @@ export const Navbar = () => {
 
            role=${navItem.id}
            
-           onmouseover="globalThis.mapAllDispatch.navbar.switchNavbarItem(this.getAttribute('role'))"           
+           onclick="globalThis.mapAllDispatch.navbar.switchNavbarItem(this.getAttribute('role'))"           
        >
            ${navItem.value}
            

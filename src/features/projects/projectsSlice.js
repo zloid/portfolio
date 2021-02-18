@@ -6,7 +6,6 @@ import '../../../public/assets/vanilla-js-audio-player.jpg'
 import '../../../public/assets/currency-processing-app.jpg'
 import '../../../public/assets/current-weather-data-on-map.jpg'
 
-
 const initialState = {
     projects: {
         vanillaJS: [
@@ -15,7 +14,7 @@ const initialState = {
                 name: 'math-calc',
                 link: 'https://zloid.github.io/math-calc/',
                 thumbnail: 'assets/math-calc.jpg',
-                description: 'small math calc with tests',
+                description: 'modern JS math calc SPA',
             },
             {
                 id: 1,
@@ -32,23 +31,32 @@ const initialState = {
                 link:
                     'https://zloid.github.io/React-App-Finding-Balance-Errors/',
                 thumbnail: 'assets/react-app-finding-balance-errors.jpg',
-                description: 'react...',
+                description:
+                    'React + Redux-ToolKit app for finding errors in the account balance',
             },
             {
                 id: 1,
                 name: 'figma-template-to-react',
                 link: 'http://figma-template-to-react.zloid.ru/',
                 thumbnail: 'assets/react-from-figma-tmplt.jpg',
-                description: 'react...',
+                description: 'Figma template + React + Styled Components',
             },
             {
                 id: 2,
                 name: 'currency-processing-app',
                 link: 'https://zloid.github.io/currency-processing-app/',
                 thumbnail: 'assets/currency-processing-app.jpg',
-                description: 'react...',
+                description:
+                    'React + Redux-ToolKit App: example of currency processing',
             },
-            {id: 3, name: 'current-weather-data-on-map', link: 'https://zloid.github.io/current-weather-data-on-map/', thumbnail: 'assets/current-weather-data-on-map.jpg', description: 'React + Redux-Toolkit SPA: shows the current weather in Poland in different colors'},
+            {
+                id: 3,
+                name: 'current-weather-data-on-map',
+                link: 'https://zloid.github.io/current-weather-data-on-map/',
+                thumbnail: 'assets/current-weather-data-on-map.jpg',
+                description:
+                    'React + Redux-Toolkit SPA: shows the current weather in Poland in different colors',
+            },
         ],
     },
 }
