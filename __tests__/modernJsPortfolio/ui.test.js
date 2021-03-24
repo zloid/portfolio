@@ -25,10 +25,10 @@ describe('App navbar', () => {
         const element = screen.getByRole(/navbarItemAll/i)
         expect(element.textContent.trim()).not.toBeNull()
     })
-    it('navbar item -VanillaJS- is exist', () => {
+    /* it('navbar item -VanillaJS- is exist', () => {
         const element = screen.getByRole(/navbarItemVanillaJS/i)
         expect(element.textContent.trim()).not.toBeNull()
-    })
+    }) */
     it('navbar item -React- is exist', () => {
         const element = screen.getByRole(/navbarItemReact/i)
         expect(element.textContent.trim()).not.toBeNull()
