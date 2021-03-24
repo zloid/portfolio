@@ -16,13 +16,13 @@ const initialState = {
                 thumbnail: 'assets/math-calc.jpg',
                 description: 'modern JS math calc SPA',
             },
-            {
-                id: 1,
-                name: 'audio-player',
-                link: 'https://zloid.github.io/audio-player/',
-                thumbnail: 'assets/vanilla-js-audio-player.jpg',
-                description: 'tiny audio player script',
-            },
+            // {
+            //     id: 1,
+            //     name: 'audio-player',
+            //     link: 'https://zloid.github.io/audio-player/',
+            //     thumbnail: 'assets/vanilla-js-audio-player.jpg',
+            //     description: 'tiny audio player script',
+            // },
         ],
         react: [
             {

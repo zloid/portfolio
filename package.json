@@ -1,14 +1,14 @@
 {
     "name": "modern-js-portfolio",
-    "version": "0.2.2",
+    "version": "0.2.4",
     "description": "modern-js-portfolio",
     "main": "index.js",
     "scripts": {
-        "test": "jest",
-        "start": "webpack serve --mode development",
+        "test": "jest",        
+        "start": "webpack serve --config webpack.dev.js",
+        "build": "rimraf dist && rimraf build && webpack --config webpack.prod.js --mode production",
         "checkjs": "tsc --allowJs --checkJs --noEmit --moduleResolution node --target es6 src/*.js",
         "lint": "eslint src --ext .js && npm run checkjs",
-        "build": "webpack",
         "serve": "serve",
         "clean:docs": "node ./scripts/rmrf.js ./docs",
         "jsdoc": "jsdoc -c jsdoc-config.json",
