@@ -44,7 +44,7 @@
 }
  */
 
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0px;
     /* display: none; */
 }
@@ -58,19 +58,20 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #222;
-    color: #FFF;
+    color: #fff;
     line-height: 20px;
     letter-spacing: 2.05px;
 }
 
 h1 {
     padding: 10px 0;
+    font-size: 1.8rem;
 }
 
 h1 a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.8rem
+    font-size: 1.8rem;
 }
 
 .hidden {
@@ -89,7 +90,7 @@ h1 a {
     background-color: #333;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: #FFF;
+    color: #fff;
     cursor: pointer;
     padding: 5px 15px;
     margin: 5px 0;
@@ -106,13 +107,13 @@ h1 a {
 
 #posts .post img {
     transform: translate3d(0, 0, 0) scale(1);
-    transition: .35s ease-in-out;
+    transition: 0.35s ease-in-out;
 }
 
 #posts .post:hover img {
     opacity: 0.3;
     transform: translate3d(0, 0, 0) scale(1.4);
-    transition: .35s ease-in-out;
+    transition: 0.35s ease-in-out;
 }
 
 .post {
@@ -123,7 +124,7 @@ h1 a {
     position: absolute;
     z-index: -1000;
     width: 80%;
-    transition: .30s ease-in-out;
+    transition: 0.3s ease-in-out;
     opacity: 0;
     margin: 2rem 0 0 2rem;
     font-size: 1.1rem;
@@ -136,7 +137,7 @@ h1 a {
     width: 80%;
     position: absolute;
     z-index: 1000;
-    transition: .30s ease-in-out;
+    transition: 0.3s ease-in-out;
     opacity: 1;
     margin: 2rem 0 0 1rem;
     font-size: 1.1rem;
