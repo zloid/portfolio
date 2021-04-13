@@ -10,7 +10,11 @@ const initialState = {
     isNavbarItemActive: [
         { id: 'navbarItemAll', isActive: true, value: 'ALL' },
         // { id: 'navbarItemVanillaJS', isActive: false, value: 'VanillaJS' },
-        { id: 'navbarItemReact', isActive: false, value: 'React, Redux' },
+        {
+            id: 'navbarItemReact',
+            isActive: false,
+            value: 'TypeScript, React, Redux',
+        },
         { id: 'navbarItemHtmlCssJs', isActive: false, value: 'HTML, CSS, JS' },
         { id: 'navbarItemWordpress', isActive: false, value: 'Wordpress' },
         { id: 'navbarItemOpenCart', isActive: false, value: 'OpenCart' },

@@ -40,8 +40,8 @@ export const Projects = () => {
             return /* html */ `${projectsMapper(
                 wordpressItems
             )} ${projectsMapper(reactItems)} ${projectsMapper(
-                htmlCssJsItems
-            )} ${projectsMapper(openCartItems)}`
+                openCartItems
+            )} ${projectsMapper(htmlCssJsItems)}`
 
         // case 'navbarItemVanillaJS':
         //     return /* html */ `${projectsMapper(vanillaJsItems)}`

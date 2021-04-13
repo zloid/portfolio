@@ -1,15 +1,16 @@
 import { normalize, schema } from 'normalizr'
-import '../../../public/assets/react-app-finding-balance-errors.jpg'
-import '../../../public/assets/react-from-figma-tmplt.jpg'
+// import '../../../public/assets/react-app-finding-balance-errors.jpg'
+// import '../../../public/assets/react-from-figma-tmplt.jpg'
 // import '../../../public/assets/math-calc.jpg'
 // import '../../../public/assets/vanilla-js-audio-player.jpg'
-import '../../../public/assets/currency-processing-app.jpg'
-import '../../../public/assets/current-weather-data-on-map.jpg'
+// import '../../../public/assets/currency-processing-app.jpg'
+// import '../../../public/assets/current-weather-data-on-map.jpg'
 import '../../../public/assets/fast-search-min.jpg'
 import '../../../public/assets/deals-fest-site-4.jpg'
 import '../../../public/assets/twoje-finanse-3.jpg'
 import '../../../public/assets/stroika-1-ru-3.jpg'
 import '../../../public/assets/mirpodvoha-2.jpg'
+import '../../../public/assets/movie-app.jpg'
 
 const initialState = {
     projects: {
@@ -30,7 +31,7 @@ const initialState = {
             },
         ], */
         react: [
-            {
+            /*  {
                 id: 0,
                 name: 'React-App-Finding-Balance-Errors',
                 link:
@@ -61,6 +62,14 @@ const initialState = {
                 thumbnail: 'assets/current-weather-data-on-map.jpg',
                 description:
                     'React + Redux-Toolkit SPA: shows the current weather in Poland in different colors',
+            }, */
+            {
+                id: 4,
+                name: 'ts-react-redux-movie-app',
+                link: 'http://ts-react-redux-movie-app.zloid.ru/actions',
+                thumbnail: 'assets/movie-app.jpg',
+                description:
+                    'TypeScript + React + Redux-Toolkit SPA: movie App',
             },
         ],
         htmlCssJs: [
